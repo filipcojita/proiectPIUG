@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimmyCreationStudio - Home</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="/img/logo2.png" alt="TimmyCreationStudio Logo">
+                <span class="brand-name">TimmyCreationStudio</span>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#"><b>Home</b></a></li>
+                    <li><a href="shop.html">Shop</a></li> <!-- Link to shop page -->
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+<body>
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>TimmyCreationStudio</h1>
+                <p>Ornamente personalizate din lemn si polistiren<br>pentru evenimentul tău</p>
+                <a href="shop.html" class="btn">Shop Now</a>
+            </div>
+        </div>
+    </section>
+    
+    <section class="featured-products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="/img/featuredprod1.jpg" alt="Product 1">
+                    <h3>Semne de carte</h3>
+                    <p>Semne de carte personalizabile pentru sfarsit de an scolar</p>
+                    <span>7 RON</span>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="/img/featuredprod2.jpg" alt="Product 2">
+                    <h3>Medalii absolvent<br>(snur metalic)</h3>
+                    <p>Medalii pentru absolventi grupa mica/mijlocie/mare gradinita cu snur metalic</p>
+                    <span>7 RON</span>
+                    <button>Add to Cart</button>
+                </div>
+                <!-- aici se pot adauga alte produse -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="about-us">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>TimmyCreationStudio se dedică fabricării de ornamente calitative din lemn și polistiren, prin tehnica tăierii cu laser. Călătoria noastră a început cu o pasiune pentru creativitate și dorinta de a crea decorul perfect pentru fiecare eveniment</p>
+                <p>Fiecare dintre produsele noastre este meticulos proiectat și realizat de meșteri pricepuți, care își pun mândria în munca lor. Noi credem în crearea pieselor care nu numai că îmbunătățesc decorul dumneavoastră, dar și spun o poveste și stârnesc emoții.</p>
+                <p>Alăturați-vă nouă în misiunea noastră de a aduce frumusețe și bucurie în casele din întreaga lume prin creațiile noastre unice.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="shop-by-category">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <img src="img/figlemn.jpg" alt="Wood Ornaments">
+                    <h3>Figurine din Lemn</h3>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+                <div class="category-card">
+                    <img src="img/figpoli2.jpg" alt="Polyester Ornaments">
+                    <h3>Figurine din Polistiren</h3>
+                    <a href="#" class="btn">Explore</a>
+                </div>
+                <!-- Add more category cards as needed -->
+            </div>
+        </div>
+    </section>
+
+    <section class="newsletter">
+        <div class="container">
+            <h2>Join Our Newsletter</h2>
+            <p>Subscribe to our newsletter for exclusive offers, product updates, and design inspirations!</p>
+            <form class="newsletter-form" action="#" method="post" onsubmit="return validateForm(event)">
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                <button type="submit">Subscribe</button>
+                <div id="success-message" style="display: none; color: white;">You have successfully subscribed!</div>
+            </form>
+        </div>
+    </section>
+    <script src="script.js"></script>
+    
+</body>
+
+<footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>TimmyCreationStudio</h3>
+                <p>A small business specializing in <br>laser-cut ornaments</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li> <!-- Link to shop page -->
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="contactus.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>
+                    <img src="/img/envelope.svg" alt="Email Icon"> timmycreationstudio@gmail.com
+                </p>
+                <p>
+                    <img src="img/telephone-inbound.svg" alt="Phone Icon"> +40773983510
+                </p>
+            </div>
+        </div>
+</footer>
+
+</html>

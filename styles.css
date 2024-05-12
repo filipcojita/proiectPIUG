@@ -1,0 +1,895 @@
+/* main theme colors */
+:root {
+    --main-brown: #6d4c41;
+    --main-orange: #f4b15f;
+    --soft-orange: #ffefd3;
+    --dark-brown: #433426;
+    --darker-orange: #d28107;
+    --hover-orange: #9e5e0f;
+    --button-orange: #d28107;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: var(--soft-orange);
+    padding: 5px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo img {
+    max-width: 55px;
+}
+
+/* Add styles for the brand name */
+.brand-name {
+    display: none; /* Initially hide the brand name */
+    margin-left: 5px; /* Add some space between the logo and brand name */
+    font-family: 'Pacifico', cursive; /* Use Pacifico or any other handwritten font */
+    font-size: 28px; /* Increase the font size */
+    line-height: 45px; /* Match the line height with the logo height */
+    vertical-align: 20px; /* Align vertically with the logo */
+}
+
+/* Media query to show the brand name when the screen size is large enough */
+@media only screen and (min-width: 768px) {
+    .brand-name {
+        display: inline; /* Show the brand name */
+    }
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: var(--main-orange);
+}
+
+.hero {
+    background-image: url('/img/IMAG1358.jpg'); /* Replace 'hero-background.jpg' with your actual image path */
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h1 {
+    font-size: 64px; /* Increase font size */
+    margin-bottom: 20px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Add black margin to the letters */
+}
+
+.hero-content p {
+    font-size: 30px; /* Increase font size */
+    margin-bottom: 80px;
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Add black margin to the letters */
+}
+
+.btn {
+    display: inline-block;
+    background-color: var(--main-orange);
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 28px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--darker-orange);
+}
+
+/* Featured Products Section */
+.featured-products {
+    padding: 80px 0;
+    background-color: #ffefd3; /* Background color */
+}
+
+.featured-products h2 {
+    text-align: center; /* Center-align heading */
+    color: #6d4c41; /* Heading color */
+    margin-bottom: 40px; /* Bottom margin */
+    font-size: 36px; /* Font size */
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-card h3 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.product-card p {
+    margin-top: 10px;
+    color: #666;
+}
+
+.product-card span {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    color: #d28107;
+}
+
+.product-card button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: var(--button-orange);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+    background-color: var(--hover-orange);
+}
+
+.about-us {
+    padding: 80px 0;
+    background-color: var(--main-brown); /* Use brown as the background color */
+    color: #fff; /* White text color for better contrast */
+}
+
+.about-us h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 36px;
+    color: var(--main-orange); /* Orange for the heading */
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-content p {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.shop-by-category {
+    padding: 80px 0;
+    background-color: #ffefd3; /* You can adjust the background color as per your theme */
+    text-align: center;
+}
+
+.shop-by-category h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--main-brown); /* Using the main brown color for consistency */
+}
+
+.shop-by-category h3 {
+    font-size: 36px;
+    color: var(--main-brown); /* Using the main brown color for consistency */
+}
+
+.category-grid {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+}
+
+.category-card {
+    width:300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background color for cards */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.category-card img {
+    flex: 1; /* Allow the image to grow and shrink within the card */
+    max-width: 100%;
+    height: auto; /* Ensure the image maintains its aspect ratio */
+    margin-bottom: 20px; /* Add margin to separate the image from other content */
+}
+
+.category-card h3 {
+    font-size: 24px;
+}
+
+.category-card .btn {
+    display: inline-block;
+    background-color: var(--button-orange); /* Using the main orange color for buttons */
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.category-card .btn:hover {
+    background-color: var(--hover-orange); /* Darker shade of orange on hover */
+}
+
+.newsletter {
+    padding: 50px 0;
+    background-color: var(--main-brown); /* Use main brown color for the background */
+    color: #fff; /* White text color for better contrast */
+    text-align: center;
+}
+
+.newsletter h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--main-orange);
+    padding-right: 45px;
+}
+
+.newsletter p {
+    padding: 0 35px 0 35px;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    max-width: 400px;
+    margin-left: 20px;
+}
+
+.newsletter-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.newsletter-form button {
+    background-color: var(--button-orange); /* Use main orange color for the button */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: var(--hover-orange); /* Darker shade of orange on hover */
+}
+
+.footer {
+    background-color: #333; /* Dark background color for the footer */
+    color: var(--soft-orange); 
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-content {
+    padding: 0 20px 0;
+    display: flex;
+    justify-content: space-between; /* Spread items evenly */
+    flex-wrap: wrap;
+    text-align: center; /* Center-align text within each column */
+}
+
+.footer-logo,
+.footer-links,
+.footer-contact {
+    flex: auto;
+    text-align: center;
+}
+
+
+.footer-logo h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: var(--main-orange); /* Orange color for the logo */
+}
+
+.footer-logo p {
+    font-size: 14px;
+    color: #ccc; /* Light gray color for the description */
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #fff; /* White color for section titles */
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 5px;
+}
+
+.footer-links ul li a {
+    color: #ccc; /* Light gray color for links */
+    text-decoration: none;
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+.footer-links ul li a:hover {
+    color: #fff; /* White color on hover */
+}
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ccc !important; /* Light gray color for contact information */
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Align items horizontally */
+}
+
+.footer-contact p img {
+    margin-right: 5px; /* Add some space between the image and text */
+    filter: grayscale(100%) !important; /* Apply grayscale filter to make the image appear grey */
+}
+
+/* Shop Title Section */
+.shoptitle {
+    background-color: var(--dark-brown); /* Background color */
+    padding: 10px 0; /* Padding */
+    text-align: center; /* Center-align text */
+}
+
+.shoptitle h1 {
+    font-size: 36px; /* Font size */
+    color: var(--soft-orange); /* Text color */
+}
+
+/* shop section */
+.shop {
+    background-color: var(--main-brown); /* Brown background color */
+    padding-bottom: 30px; 
+}
+
+/* Shop Product Card */
+.shop-product-card {
+    width: calc(25% - 40px); /* Adjust the width as per your layout */
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.shop-product-card:hover {
+    transform: translateY(-5px); /* Move the card up on hover */
+}
+
+.shop-product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.shop-product-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.shop-product-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.shop-product-card span {
+    display: block;
+    font-size: 18px;
+    color: #d28107;
+    margin-bottom: 20px;
+}
+
+/* Add to Cart button styles */
+.shop-product-card .add-to-cart {
+    display: inline-block;
+    background-color: #d28107;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.shop-product-card .add-to-cart:hover {
+    background-color: #9e5e0f;
+}
+
+/* pt aboutus.html*/
+/* Quotes Section */
+.quotes {
+    padding: 80px 0;
+    background-color: var(--main-orange); /* Orange background color */
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+.quotes .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.quote {
+    flex: 1;
+    padding: 20px;
+}
+
+.quote p {
+    font-size: 24px;
+    font-style: italic;
+    color: #ffffff; /* White text color for better contrast */
+    font-weight: bold; /* Increases text weight for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adds a subtle shadow to make text pop */
+}
+
+/* Product Presentations Section */
+.product-presentations {
+    padding: 80px 0;
+    background-color: var(--main-brown); /* Brown background color */
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+.product-presentations h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--main-orange); /* Orange color for the heading */
+}
+
+.product-presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.product-card span {
+    display: block;
+    font-size: 20px;
+    color: #d28107;
+    margin-bottom: 20px;
+}
+
+/* Add to Cart button styles */
+.product-card .add-to-cart {
+    display: inline-block;
+    background-color: #d28107;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .add-to-cart:hover {
+    background-color: #9e5e0f;
+}
+
+/*map*/
+.map-container {
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background-color: var(--main-brown); 
+    text-align: center;
+}
+
+.contact h2{
+    font-size: 36px;
+    justify-content: flex;
+    margin:0;
+    color: var(--soft-orange); 
+}
+
+.contact h1,h3,h4,h5 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--soft-orange); 
+}
+
+.contact label{
+    color:var(--soft-orange);
+}
+
+.contact p {
+    font-size: 18px;
+    color: var(--soft-orange); /* Text color */
+    margin-bottom: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact form label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: left;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact form button {
+    background-color: #d28107; /* Orange background color */
+    color: #fff; /* White text color */
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #9e5e0f; /* Darker shade of orange on hover */
+}
+
+/* Social Media Section */
+.social-media {
+    padding: 40px 0;
+    background-color: var(--dark-brown); /* Brown background color */
+    color: #fff; /* White text color */
+    text-align: center;
+}
+
+.social-media h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: var(--main-orange); /* Orange heading color */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+    margin: 0 10px; /* Adjust margin */
+}
+
+.social-icons a:hover {
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+
+  .fa-pinterest {
+    background: #cb2027;
+    color: white;
+  }
+
+  #success-message {
+    display: none;
+    color: white;
+    background-color: #4CAF50; /* Green background */
+    padding: 10px 20px; /* Add padding */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 10px; /* Add margin */
+ }
+
+ .faq {
+    background-color: #6a3434;
+    padding-top: 20px;
+    padding-bottom: 20px; /* Add padding at the bottom */
+}
+
+.faq .container {
+    display: flex;
+    flex-direction: column; /* Change flex direction to stack items vertically */
+    align-items: center;
+}
+
+.faq .container h2{
+    font-size: 40px;
+    color: var(--soft-orange);
+    margin-bottom: 20px; /* Add margin at the bottom */
+}
+
+.faq-item {
+    max-width: 600px; /* Limit the width of the FAQ items */
+    margin-bottom: 30px;
+    padding: 20px; /* Add padding for better spacing */
+    background-color: #ede1e1; /* Add a light background color */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.faq-item h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px; /* Add space between question and answer */
+}
+
+.faq-item p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5; /* Increase line height for better readability */
+}
+
+
+
+/* Responsive Media Queries */
+@media only screen and (max-width: 767px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        text-align: center; /* Center-align content */
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px auto; /* Adjust margin */
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: #333;
+        font-size: 30px !important; /* Increase font size and use !important to override previous styles */
+        transition: color 0.3s ease;
+    }
+
+    .logo img {
+        max-width: 45%; /* Make logo responsive */
+    }
+
+    .hero-content h1 {
+        font-size: 46px; /* Adjust font size */
+        max-width: fit-content;
+    }
+
+    .hero-content p {
+        font-size: 24px; /* Adjust font size */
+        margin-bottom: 40px; /* Increase bottom margin for spacing */
+    }
+
+    .btn {
+        font-size: 18px; /* Adjust font size */
+        padding: 10px 20px; /* Adjust padding */
+    }
+
+    .product-card,
+    .category-card {
+        width: calc(50% - 20px) !important;
+    }
+
+    .shop-product-card{
+        width: 80% !important;
+        padding-bottom: 50px !important;
+        margin: 40px !important;
+    }
+
+    .quotes .container {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .quote {
+        padding: 20px 0; /* Adjust padding */
+    }
+
+    .quote p {
+        font-size: 16px; /* Adjust font size */
+    }
+
+    .product-presentations h2 {
+        font-size: 24px; /* Adjust font size */
+    }
+
+    .product-card,
+    .shop-product-card {
+        width: calc(100% - 20px); /* Full width */
+        margin: 10px 0; /* Adjust margin */
+    }
+
+    .social-icons a {
+        margin: 0 12px; /* Adjust margin */
+    }
+
+    .fa {
+        padding: 18; /* Adjust padding */
+        font-size: 40px; /* Adjust font size */
+        width: 40px; /* Adjust width */
+    }
+    
+    .contact{
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    .contactdiv{
+        padding-top: 20px;
+    }
+
+    .map-container H1{
+        height: max-content;
+        position: relative;
+    }
+
+    .map-container {
+        width: 100%; 
+        max-width: 100%; 
+        height: 400px; 
+        margin: 20px 0; 
+        overflow: hidden; 
+        position: relative; 
+        padding-top: 20px; 
+        padding-bottom: 20px; 
+    }
+    
+    .map-container iframe {
+        width: 100%; 
+        height: calc(100% - 40px);
+        top: 0; 
+        left: 0; 
+        border: none;
+    }
+    
+   .newsletter h2{
+    padding: 0%;
+   }
+    
+   .faq .container h2 {
+    font-size: 34px; /* Decrease font size for smaller screens */
+}
+
+.faq-item {
+    max-width: 90%; /* Adjust width for smaller screens */
+}
+
+.faq-item h3 {
+    font-size: 22px; /* Decrease font size for smaller screens */
+}
+
+.faq-item p {
+    font-size: 18px; /* Decrease font size for smaller screens */
+}
+}
