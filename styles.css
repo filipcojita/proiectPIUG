@@ -1,4 +1,4 @@
-/* main theme colors */
+/* Main theme colors */
 :root {
     --main-brown: #6d4c41;
     --main-orange: #f4b15f;
@@ -7,6 +7,17 @@
     --darker-orange: #d28107;
     --hover-orange: #9e5e0f;
     --button-orange: #d28107;
+    --footer-color: #333333;
+}
+
+.dark-mode {
+    --main-brown: #331400;
+    --main-orange: #ad68008a;
+    --soft-orange: #333333;
+    --dark-brown: #ffffff;
+    --darker-orange: #74634a;
+    --hover-orange: #ad8345;
+    --button-orange: #595959;
 }
 
 html {
@@ -16,12 +27,27 @@ html {
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: var(--soft-orange);
+    color: var(--dark-brown);
 }
 
 header {
     background-color: var(--soft-orange);
     padding: 5px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--dark-brown);
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+button#theme-toggle:hover {
+    color: var(--hover-orange);
 }
 
 .container {
@@ -37,21 +63,13 @@ header {
     max-width: 55px;
 }
 
-/* Add styles for the brand name */
 .brand-name {
-    display: none; /* Initially hide the brand name */
-    margin-left: 5px; /* Add some space between the logo and brand name */
-    font-family: 'Pacifico', cursive; /* Use Pacifico or any other handwritten font */
-    font-size: 28px; /* Increase the font size */
-    line-height: 45px; /* Match the line height with the logo height */
-    vertical-align: 20px; /* Align vertically with the logo */
-}
-
-/* Media query to show the brand name when the screen size is large enough */
-@media only screen and (min-width: 768px) {
-    .brand-name {
-        display: inline; /* Show the brand name */
-    }
+    display: none;
+    margin-left: 5px;
+    font-family: 'Pacifico', cursive;
+    font-size: 28px;
+    line-height: 45px;
+    vertical-align: 20px;
 }
 
 nav ul {
@@ -67,42 +85,42 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #333;
+    color: var(--dark-brown);
     font-size: 18px;
     transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: var(--main-orange);
+    color: var(--hover-orange);
 }
 
 .hero {
-    background-image: url('/img/IMAG1358.jpg'); /* Replace 'hero-background.jpg' with your actual image path */
+    background-image: url('/img/IMAG1358.jpg');
     background-size: cover;
     background-position: center;
     color: #fff;
     padding: 100px 0;
     text-align: center;
-}
-
-.hero-content {
+    }
+    
+    .hero-content {
     max-width: 800px;
     margin: 0 auto;
-}
-
-.hero-content h1 {
-    font-size: 64px; /* Increase font size */
+    }
+    
+    .hero-content h1 {
+    font-size: 64px;
     margin-bottom: 20px;
-    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Add black margin to the letters */
-}
-
-.hero-content p {
-    font-size: 30px; /* Increase font size */
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .hero-content p {
+    font-size: 30px;
     margin-bottom: 80px;
-    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5); /* Add black margin to the letters */
-}
-
-.btn {
+    text-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+    }
+    
+    .btn {
     display: inline-block;
     background-color: var(--main-orange);
     color: #fff;
@@ -111,62 +129,62 @@ nav ul li a:hover {
     text-decoration: none;
     font-size: 28px;
     transition: background-color 0.3s ease;
-}
-
-.btn:hover {
+    }
+    
+    .btn:hover {
     background-color: var(--darker-orange);
-}
-
-/* Featured Products Section */
-.featured-products {
+    }
+    
+    /* Featured Products Section */
+    .featured-products {
     padding: 80px 0;
-    background-color: #ffefd3; /* Background color */
-}
-
-.featured-products h2 {
-    text-align: center; /* Center-align heading */
-    color: #6d4c41; /* Heading color */
-    margin-bottom: 40px; /* Bottom margin */
-    font-size: 36px; /* Font size */
-}
-
-.product-grid {
+    background-color: var(--soft-orange);
+    }
+    
+    .featured-products h2 {
+    text-align: center;
+    color: var(--main-brown);
+    margin-bottom: 40px;
+    font-size: 36px;
+    }
+    
+    .product-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.product-card {
+    }
+    
+    .product-card {
     width: 300px;
     margin: 20px;
     padding: 20px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
-}
-
-.product-card img {
+    }
+    
+    .product-card img {
     max-width: 100%;
-}
-
-.product-card h3 {
+    }
+    
+    .product-card h3 {
     margin-top: 20px;
     font-size: 24px;
-}
-
-.product-card p {
+    }
+    
+    .product-card p {
     margin-top: 10px;
     color: #666;
-}
-
-.product-card span {
+    }
+    
+    .product-card span {
     display: block;
     font-size: 20px;
     margin-top: 10px;
-    color: #d28107;
-}
-
-.product-card button {
+    color: var(--darker-orange);
+    }
+    
+    .product-card button {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: var(--button-orange);
@@ -175,218 +193,308 @@ nav ul li a:hover {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.product-card button:hover {
+    }
+    
+    .product-card button:hover {
     background-color: var(--hover-orange);
-}
-
-.about-us {
+    }
+    
+    .about-us {
     padding: 80px 0;
-    background-color: var(--main-brown); /* Use brown as the background color */
-    color: #fff; /* White text color for better contrast */
-}
-
-.about-us h2 {
+    background-color: var(--main-brown);
+    color: #fff;
+    }
+    
+    .about-us h2 {
     text-align: center;
     margin-bottom: 40px;
     font-size: 36px;
-    color: var(--main-orange); /* Orange for the heading */
-}
-
-.about-content {
+    color: var(--main-orange);
+    }
+    
+    .about-content {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
-}
-
-.about-content p {
+    }
+    
+    .about-content p {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 1.6;
-}
-
-.shop-by-category {
+    }
+    
+    .shop-by-category {
     padding: 80px 0;
-    background-color: #ffefd3; /* You can adjust the background color as per your theme */
+    background-color: var(--soft-orange);
     text-align: center;
-}
-
-.shop-by-category h2 {
+    }
+    
+    .shop-by-category h2 {
     font-size: 36px;
     margin-bottom: 40px;
-    color: var(--main-brown); /* Using the main brown color for consistency */
-}
-
-.shop-by-category h3 {
+    color: var(--main-brown);
+    }
+    
+    .shop-by-category h3 {
     font-size: 36px;
-    color: var(--main-brown); /* Using the main brown color for consistency */
-}
-
-.category-grid {
+    color: var(--main-brown);
+    }
+    
+    .category-grid {
     display: flex;
     justify-content: center;
     align-items: stretch;
     flex-wrap: wrap;
-}
-
-.category-card {
-    width:300px;
+    }
+    
+    .category-card {
+    width: 300px;
     margin: 20px;
     padding: 20px;
-    background-color: #f8f9fa; /* Light background color for cards */
+    background-color: #f8f9fa;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     text-align: center;
     display: flex;
     flex-direction: column;
-}
-
-.category-card img {
-    flex: 1; /* Allow the image to grow and shrink within the card */
+    }
+    
+    .category-card img {
+    flex: 1;
     max-width: 100%;
-    height: auto; /* Ensure the image maintains its aspect ratio */
-    margin-bottom: 20px; /* Add margin to separate the image from other content */
-}
-
-.category-card h3 {
+    height: auto;
+    margin-bottom: 20px;
+    }
+    
+    .category-card h3 {
     font-size: 24px;
-}
-
-.category-card .btn {
+    }
+    
+    .category-card .btn {
     display: inline-block;
-    background-color: var(--button-orange); /* Using the main orange color for buttons */
+    background-color: var(--button-orange);
     color: #fff;
     padding: 12px 24px;
     border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
     transition: background-color 0.3s ease;
-}
-
-.category-card .btn:hover {
-    background-color: var(--hover-orange); /* Darker shade of orange on hover */
-}
-
-.newsletter {
+    }
+    
+    .category-card .btn:hover {
+    background-color: var(--hover-orange);
+    }
+    
+    .newsletter {
     padding: 50px 0;
-    background-color: var(--main-brown); /* Use main brown color for the background */
-    color: #fff; /* White text color for better contrast */
+    background-color: var(--main-brown);
+    color: #fff;
     text-align: center;
-}
-
-.newsletter h2 {
+    }
+    
+    .newsletter h2 {
     font-size: 36px;
     margin-bottom: 20px;
     color: var(--main-orange);
     padding-right: 45px;
-}
-
-.newsletter p {
+    }
+    
+    .newsletter p {
     padding: 0 35px 0 35px;
     font-size: 18px;
     margin-bottom: 40px;
-}
-
-.newsletter-form {
+    }
+    
+    .newsletter-form {
     max-width: 400px;
     margin-left: 20px;
-}
-
-.newsletter-form input[type="email"] {
+    }
+    
+    .newsletter-form input[type="email"] {
     width: 100%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     margin-bottom: 10px;
-}
-
-.newsletter-form button {
-    background-color: var(--button-orange); /* Use main orange color for the button */
+    }
+    
+    .newsletter-form button {
+    background-color: var(--button-orange);
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-.newsletter-form button:hover {
-    background-color: var(--hover-orange); /* Darker shade of orange on hover */
-}
-
-.footer {
-    background-color: #333; /* Dark background color for the footer */
-    color: var(--soft-orange); 
+    }
+    
+    .newsletter-form button:hover {
+    background-color: var(--hover-orange);
+    }
+    
+    .footer {
+    background-color: var(--footer-color);
+    color: var(--dark-brown);
     padding: 20px 0;
     text-align: center;
-}
-
-.footer-content {
+    }
+    
+    .footer-content {
     padding: 0 20px 0;
     display: flex;
-    justify-content: space-between; /* Spread items evenly */
+    justify-content: space-between;
     flex-wrap: wrap;
-    text-align: center; /* Center-align text within each column */
-}
-
-.footer-logo,
-.footer-links,
-.footer-contact {
+    text-align: center;
+    }
+    
+    .footer-logo,
+    .footer-links,
+    .footer-contact {
     flex: auto;
     text-align: center;
-}
-
-
-.footer-logo h3 {
+    }
+    
+    .footer-logo h3 {
     font-size: 24px;
     margin-bottom: 10px;
-    color: var(--main-orange); /* Orange color for the logo */
-}
-
-.footer-logo p {
+    color: var(--main-orange);
+    }
+    
+    .footer-logo p {
     font-size: 14px;
-    color: #ccc; /* Light gray color for the description */
-}
-
-.footer-links h4,
-.footer-contact h4 {
+    color: #ccc;
+    }
+    
+    .footer-links h4,
+    .footer-contact h4 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff; /* White color for section titles */
-}
-
-.footer-links ul {
+    color: #fff;
+    }
+    
+    .footer-links ul {
     list-style: none;
     padding: 0;
-}
-
-.footer-links ul li {
+    }
+    
+    .footer-links ul li {
     margin-bottom: 5px;
-}
-
-.footer-links ul li a {
-    color: #ccc; /* Light gray color for links */
+    }
+    
+    .footer-links ul li a {
+    color: #ccc;
     text-decoration: none;
-    transition: color 0.3s ease; /* Smooth transition for link color */
-}
-
-.footer-links ul li a:hover {
-    color: #fff; /* White color on hover */
-}
-
-.footer-contact p {
+    transition: color 0.3s ease;
+    }
+    
+    .footer-links ul li a:hover {
+    color: #fff;
+    }
+    
+    .footer-contact p {
     font-size: 14px;
     margin-bottom: 5px;
-    color: #ccc !important; /* Light gray color for contact information */
+    color:#ccc !important;
     display: flex;
-    align-items: center; /* Align items vertically */
-    justify-content: center; /* Align items horizontally */
-}
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .footer-contact p img {
+    margin-right: 5px;
+    filter: grayscale(100%) !important;
+    }
+    
+    .dark-mode {
+    --main-brown: #331400;
+    --main-orange: #ad68008a;
+    --soft-orange: #d5d5d5;
+    --dark-brown: #343434;
+    --darker-orange: #74634a;
+    --hover-orange: #ad8345;
+    --button-orange: #595959;
+    --footer-color: #333333;
+    }
+    
+    /* Additional Styles for Dark Mode */
+    .dark-mode body {
+    background-color: var(--dark-brown);
+    color: var(--soft-orange);
+    }
+    
+    .dark-mode header {
+    background-color: var(--dark-brown);
+    }
+    
+    .dark-mode header nav ul li a {
+    color: var(--soft-orange);
+    }
+    
+    .dark-mode header nav ul li a:hover {
+    color: var(--hover-orange);
+    }
+    
+    .dark-mode .brand-name {
+        color: white !important;
+        display: none;
+        margin-left: 5px;
+        font-family: 'Pacifico', cursive;
+        font-size: 28px;
+        line-height: 45px;
+        vertical-align: 20px;
+    }
 
-.footer-contact p img {
-    margin-right: 5px; /* Add some space between the image and text */
-    filter: grayscale(100%) !important; /* Apply grayscale filter to make the image appear grey */
-}
+    .dark-mode .hero-content h1,
+    .dark-mode .hero-content p,
+    .dark-mode .about-content p {
+    text-shadow: none;
+    }
+    
+    .dark-mode .btn {
+    background-color: var(--darker-orange);
+    }
+    
+    .dark-mode .btn:hover {
+    background-color: var(--hover-orange);
+    }
+    
+    .dark-mode .product-card {
+    background-color: var(--main-brown);
+    color: var(--soft-orange);
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+    }
+    
+    .dark-mode .product-card h3,
+    .dark-mode .product-card p,
+    .dark-mode .product-card span {
+    color: var(--soft-orange);
+    }
+    
+    .dark-mode .product-card button {
+    background-color: var(--soft-orange);
+    color: var(--dark-brown);
+    }
+    
+    .dark-mode .product-card button:hover {
+    background-color: var(--hover-orange);
+    }
+    
+    .dark-mode .footer {
+    background-color: var(--dark-brown);
+    color: var(--soft-orange);
+    }
+    
+    .dark-mode .footer-logo p,
+    .dark-mode .footer-links h4,
+    .dark-mode .footer-contact h4,
+    .dark-mode .footer-contact p {
+    color: var(--soft-orange);
+    }
+    
+    .dark-mode .footer-links ul li a,
+    .dark-mode .footer-contact p img {
+    filter: grayscale(0%) !important;
+    }
 
 /* Shop Title Section */
 .shoptitle {
@@ -758,6 +866,11 @@ nav ul li a:hover {
 }
 
 
+@media only screen and (min-width: 768px) {
+    .brand-name {
+        display: inline;
+    }
+}
 
 /* Responsive Media Queries */
 @media only screen and (max-width: 767px) {
